@@ -9,6 +9,7 @@ export default (async () => {
       return value
     } catch (e) {
       console.log(`Файл не загрузился: ${e.message}`)
+      return e.message
     }
   })()
 
